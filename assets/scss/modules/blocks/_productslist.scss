@@ -1,0 +1,108 @@
+.products-grid {
+  display: inline-block;
+  margin: 15px -15px 15px;
+  .column {
+    margin: 15px 0;
+  }
+  .product_images_wrapper {
+    position: relative;
+    overflow: hidden;
+    .read_more_product {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+      }
+      img.main_image {
+        -webkit-transition: opacity 0.5s ease;
+        -moz-transition: opacity 0.5s ease;
+        -o-transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease;
+      }
+      img.hover_image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s linear;
+        -moz-transition: opacity 0.2s linear;
+        -o-transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
+      }
+      &:hover img.hover_image {
+        opacity: 1;
+      }
+    }
+    .wishlist_link {
+      position: absolute;
+      top:10px;
+      right: 10px;
+      z-index: 2;
+      a {
+        color:$heading-color;
+        font-size: 16px;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    a {
+      color:$heading-color;
+      &:hover {
+        color:$main-color;
+      }
+    }
+  }
+  .product_after_shop_loop {
+    text-align: center;
+  }
+  .product_description {
+    display: none;
+  }
+}
+.shop_content .products-grid {
+  margin-top: 7px;
+}
+.products-grid.list {
+  .column {
+    width: 100%;
+    .product_images_wrapper {
+      float: left;
+      width: 35%;
+    }
+    .product_list_title {
+      width: 65%;
+      float: left;
+      padding-left: 30px;
+      h3 {
+        font-size: 24px;
+        text-align: left;
+        margin: 0;
+      }
+    }
+    .product_after_shop_loop {
+      text-align: left;
+      width: 65%;
+      float: left;
+      padding-left: 30px;
+      .price {
+        color: $main-color;
+      }
+    }
+    .product_description {
+      display: block;
+      text-align: left;
+      width: 65%;
+      float: left;
+      padding-left: 30px;
+      margin-top: 20px;
+    }
+  }
+}

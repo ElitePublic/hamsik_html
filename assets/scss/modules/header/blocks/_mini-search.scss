@@ -1,0 +1,51 @@
+.mini-search {
+  position: absolute;
+  top:0px;
+  right: 15px;
+  span {
+    line-height: 65px;
+    font-size: 16px;
+    color: $main-color;
+    cursor: pointer;
+    i {
+      &:before {
+        position: relative;
+        top:6px;
+      }
+    }
+  }
+  span.close {
+    display: none;
+  }
+  .mini-search-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    form {
+      width: 300px;
+      input {
+        background: $search-background;
+        color: #fff;
+        font-size: 14px;
+        height: 60px;
+        line-height: 60px;
+        border: none;
+        &:focus {
+          border-color: $search-background;
+        }
+      }
+    }
+  }
+  .mini-search-content.show {
+    display: block;
+  }
+}
+.device-xxs {
+  .mini-search {
+    top: -59px;
+    right: 48px;
+    span {
+      line-height: 40px;
+    }
+  }
+}

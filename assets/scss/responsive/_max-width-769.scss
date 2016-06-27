@@ -1,0 +1,58 @@
+@media only screen and (max-width: 769px) {
+  .site-top-bar {
+    position: relative;
+    z-index: 1002;
+  }
+  .site-header .header-logo {
+    margin: 20px 0;
+  }
+  .mobile-main-menu-btn {
+    display: block;
+    margin-top:20px;
+  }
+  .site-main-navigation
+  .main-menu {
+    display: none;
+  }
+  .mini-search {
+    top: -68px;
+  }
+  .eliteup-iconbox {
+    margin-bottom: 30px;
+  }
+  .about-store {
+    padding-top: 30px;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+  }
+  .best-collection .colection-3,
+  .best-collection .colection-4
+  {
+    padding-top: 30px;
+  }
+  .site-footer {
+    .columns {
+      margin-bottom: 30px;
+    }
+    .bottom-footer {
+      text-align: center;
+      .columns {
+        margin-bottom: 0;
+      }
+      .text-right {
+        text-align: center !important;
+      }
+    }
+    .shop_location {
+      .socials {
+        display: block;
+      }
+    }
+  }
+  .eliteup-widget-panel-content {
+    padding: 0 20px;
+  }
+  .eliteup-mini-cart .eliteup-mini-cart-summary {
+    padding: 0 20px;
+  }
+}

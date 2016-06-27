@@ -1,0 +1,66 @@
+@media only screen and (max-width: 641px) {
+  .site-main-slider {
+    margin-bottom: 10px;
+  }
+  //.site-main-content {
+  //  .columns {
+  //    padding-left: 30px !important;
+  //    padding-right: 30px !important;
+  //    .columns {
+  //      padding-left: .625rem !important;
+  //      padding-right: 625rem !important;
+  //    }
+  //  }
+  //}
+  .site-block-row {
+    padding: 10px 0;
+  }
+  .eliteup-iconbox {
+    margin-bottom: 15px;
+  }
+  .products-grid {
+    margin: 0;
+  }
+  .about-store {
+    padding-top: 15px;
+    h2 {
+      line-height: 115%;
+    }
+    .more-pictures {
+      .column {
+        margin-bottom: 1.250rem;
+      }
+    }
+  }
+  .best-collection .colection-2,
+  .best-collection .colection-3,
+  .best-collection .colection-4,
+  .best-collection .colection-5
+  {
+    padding-top: 10px;
+  }
+  .newsletter-box {
+    min-height: 300px;
+  }
+  .site-footer {
+    padding-top: 10px;
+    .columns {
+      margin-bottom: 10px;
+    }
+    .bottom-footer {
+      text-align: center;
+      .columns {
+        margin-bottom: 0;
+      }
+      p {
+        line-height: 40px;
+      }
+      .text-right {
+        text-align: center !important;
+      }
+    }
+  }
+  .eliteup-widget-panel {
+    width: 270px;
+  }
+}

@@ -1,0 +1,109 @@
+.shopping_cart_content {
+  margin-top: 50px;
+  table thead th {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .product-thumbnail {
+    width: 100px;
+  }
+  .quantity .qty {
+    width: 3.631em;
+    text-align: center;
+  }
+  .cart-collaterals {
+    border: $border-color solid 1px;
+    padding: 0 30px;
+    margin-left: 60px;
+    h2 {
+      margin: 0 0 25px 0;
+      border-bottom: $border-color solid 1px;
+      text-transform: uppercase;
+      text-align: left;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      line-height: 43px;
+      letter-spacing: 1px;
+    }
+    table tbody, table tfoot, table thead {
+      border: none;
+    }
+    table tbody th {
+      vertical-align: top;
+    }
+    .order-total {
+      .amount {
+        color: $heading-color;
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+    }
+    .button {
+      width: 100%;
+      background: none;
+      color: $main-color;
+      border: $main-color solid 2px;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      &:hover {
+        border: $main-color solid 2px;
+      }
+    }
+    .checkout-button.button {
+      width: 100%;
+      background: $main-color;
+      color: #fff;
+      line-height: 30px;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &:hover {
+        background: lighten($main-color,10%);
+      }
+    }
+  }
+  #shipping_method {
+    list-style: none;
+    margin: 0;
+  }
+  .coupon_code_wrapper {
+    border-width: 3px;
+    border-style: dashed;
+    border-color: $border-color;
+    margin: 0;
+    padding: 35px 0px 35px;
+    margin-top: 35px;
+    text-align: center;
+    .coupon_code_wrapper_inner {
+      display: inline-block;
+      margin: 0 auto;
+      #coupon_code {
+        background: lighten($background-color,1%);
+        border:$border-color solid 1px;
+        float: left;
+        width: 250px;
+        margin: 0 10px 0 0;
+        height: 49px;
+        padding-left: 10px;
+        &:focus {
+          border: $main-color solid 1px;
+        }
+      }
+      .button {
+        float: left;
+        background: none;
+        color: $main-color;
+        border: $main-color solid 2px;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        &:hover {
+          border: $main-color solid 2px;
+        }
+      }
+    }
+  }
+}

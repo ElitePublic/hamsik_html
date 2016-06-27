@@ -1,0 +1,10 @@
+.slide-item {
+  width: 100%;
+  background-color: darken($background-color,3%);
+  padding: 80px 0;
+  overflow: hidden;
+  .slide-image {
+    position: relative;
+    left: 41%;
+  }
+}

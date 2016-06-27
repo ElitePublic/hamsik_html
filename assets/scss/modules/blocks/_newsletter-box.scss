@@ -1,0 +1,22 @@
+.newsletter-box {
+  position: relative;
+  background-color: darken($background-color,3%);
+  text-align: center;
+  .newsletter-box-holder {
+    position: absolute;
+    top:calc(50% - 87.5px);
+    width: 100%;
+  }
+  h3 {
+    font-size: 20px;
+    letter-spacing: .1em;
+  }
+  form {
+    width: 40%;
+    margin: 0 auto;
+  }
+  input[type=button] {
+    width: 100%;
+  }
+
+}

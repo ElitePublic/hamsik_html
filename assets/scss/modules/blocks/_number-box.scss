@@ -1,0 +1,16 @@
+.number-box-holder {
+  padding: 70px;
+  .eliteup-number-box {
+    margin: 0 auto;
+    max-width: 300px;
+    h2 {
+      display: inline-block;
+      font-size: 48px;
+      letter-spacing: 2px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: $text-color;
+      border-bottom: $main-color solid 2px;
+    }
+  }
+}

@@ -1,0 +1,204 @@
+body {
+  background: $background-color;
+  color: $text-color;
+  font-size: 14px;
+  font-family: $body-font;
+  line-height: 24px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+a {
+  color: $text-color;
+  &:hover {
+    color: $main-color;
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $secondary-font;
+  color: $heading-color;
+  margin-bottom: 25px;
+}
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+h2.uppercase {
+  letter-spacing: 0.2em;
+}
+h3.uppercase {
+  letter-spacing: 0.1em;
+}
+h4.uppercase {
+  letter-spacing: 3px;
+}
+.uppercase {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+input {
+  font-family: $secondary-font;
+}
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+  background: lighten($background-color,1%);
+  border-color: $border-color;
+  font-size: 13px;
+  height: 40px;
+  color: $text-color;
+  box-shadow: inset 0 0 0 hsla(0,0,0,0);
+  &:focus {
+    background: lighten($background-color,1%);
+    border-color: $main-color;
+    box-shadow: inset 0 0 0 hsla(0,0,0,0);
+  }
+}
+input[type=button] {
+  color: #fff;
+  background: $heading-color;
+  border: none;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  &:hover {
+    background: $main-color;
+    /*background: darken($heading-color,10%);*/
+  }
+}
+body.dark input[type=button] {
+  color: #fff;
+  background: $main-color;
+  border: none;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  &:hover {
+    background: lighten($main-color,5%)
+  }
+}
+.button {
+  background: $heading-color;
+  margin: 0;
+}
+.button:focus, .button:hover {
+  background: darken($heading-color,10%);
+}
+select {
+  background-color: lighten($background-color,2%);
+  color: $text-color;
+  border-color: $border-color;
+}
+abbr[title] {
+  border: none;
+  color: $main-color;
+}
+table thead th {
+  color: $heading-color;
+}
+table tbody, table tfoot, table thead {
+  background: $background-color;
+  border-color: $border-color;
+}
+table tbody tr:nth-child(even) {
+  background-color: $background-color;
+}
+label {
+  color: $heading-color;
+}
+blockquote, blockquote p {
+  color: lighten($text-color,10%);
+}
+hr {
+  border-color: $border-color;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.lead {
+  a {
+    color: $main-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+/* Page overlay */
+.eliteup-page-overlay {
+  visibility: hidden;
+  position: fixed;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  content: " ";
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.84);
+  -webkit-transition: opacity 0.20s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: opacity 0.20s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: opacity 0.20s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: opacity 0.20s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+#eliteup-widget-panel-overlay {
+  z-index: 1010;
+  cursor: pointer;
+  cursor: ew-resize;
+}
+.eliteup-page-overlay.show {
+  visibility: visible;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.eliteup-page-overlay.fade-out {
+  opacity: 0;
+}
+.slide-menu-open .eliteup-page-overlay {
+  cursor: pointer;
+  cursor: ns-resize;
+}
+.slide-menu-open .eliteup-page-overlay.show {
+  opacity: 0.19;
+}
+.site-main-content {
+  display: block;
+}
+.site-block-row {
+  padding: 30px 0;
+}
+.full_width .row {
+  max-width: 100%;
+  width: 100%;
+}
+.product_list_page .site-main-navigation {
+  box-shadow: 0 1px 0 $border-color;
+}
+.page-title h3 {
+  margin: 0;
+}
+.parallax {
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

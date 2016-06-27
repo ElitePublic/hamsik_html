@@ -1,0 +1,17 @@
+.site_sidebar {
+  .posts_list {
+    li {
+      margin-bottom: 20px;
+      a {
+        color: $main-color;
+        display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .date {
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.paginator {
+  text-align: center;
+  ul {
+    margin: 0;
+    list-style:none;
+    li {
+      display: inline-block;
+      width: 35px;
+      border: 1px solid $border-color;
+      margin-right: 1px;
+      text-align: center;
+      &:hover {
+        background: $main-color;
+        border-color: $main-color;
+      }
+      a {
+        display: block;
+        font-size: 12px;
+        line-height: 30px;
+        color: $text-color;
+        font-weight: 600;
+        &:hover {
+          color:#fff;
+        }
+        i {
+          position: relative;
+          top:5px;
+          font-size: 18px;
+        }
+      }
+    }
+    .current {
+      background: $main-color;
+      border-color: $main-color;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

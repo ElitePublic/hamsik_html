@@ -1,0 +1,15 @@
+.site-header{
+  .columns {
+    position: relative;
+  }
+  .header-logo {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+.device-xxs {
+  .site-header .header-logo {
+    margin: 0 0 20px 0;
+  }
+}

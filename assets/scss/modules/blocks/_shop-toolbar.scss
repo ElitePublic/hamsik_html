@@ -1,0 +1,32 @@
+.shop_toolbar {
+  margin-top: 20px;
+  .grid_list_view {
+    a {
+      font-size: 22px;
+      line-height: 39px;
+      color:$text-color;
+      margin-right: 8px;
+      &:hover {
+        color: $main-color;
+      }
+      i {
+        position: relative;
+        top:5px;
+      }
+    }
+    .current {
+      color: $main-color;
+    }
+  }
+  .woocommerce-result-count {
+    float: right;
+    margin: 0 10px 0 0;
+    line-height: 39px;
+  }
+  .woocommerce-ordering {
+    float: right;
+    select {
+      margin: 0;
+    }
+  }
+}

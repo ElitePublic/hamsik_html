@@ -1,0 +1,18 @@
+.action-box {
+  padding: 80px 0;
+  .eliteup-iconbox-icon {
+    color: $main-color;
+    font-size: 40px;
+  }
+  .eliteup-iconbox-heading {
+    font-size: 120%;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+}
+.odd {
+  background-color: darken($background-color,3%);
+}
+.even {
+  background-color: darken($background-color,5%);
+}

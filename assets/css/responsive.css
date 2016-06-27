@@ -1,0 +1,107 @@
+@media only screen and (max-width: 769px) {
+  .site-top-bar {
+    position: relative;
+    z-index: 1002;
+  }
+  .site-header .header-logo {
+    margin: 20px 0;
+  }
+  .mobile-main-menu-btn {
+    display: block;
+    margin-top: 20px;
+  }
+  .site-main-navigation
+.main-menu {
+    display: none;
+  }
+  .mini-search {
+    top: -68px;
+  }
+  .eliteup-iconbox {
+    margin-bottom: 30px;
+  }
+  .about-store {
+    padding-top: 30px;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+  }
+  .best-collection .colection-3,
+  .best-collection .colection-4 {
+    padding-top: 30px;
+  }
+  .site-footer .columns {
+    margin-bottom: 30px;
+  }
+  .site-footer .bottom-footer {
+    text-align: center;
+  }
+  .site-footer .bottom-footer .columns {
+    margin-bottom: 0;
+  }
+  .site-footer .bottom-footer .text-right {
+    text-align: center !important;
+  }
+  .site-footer .shop_location .socials {
+    display: block;
+  }
+  .eliteup-widget-panel-content {
+    padding: 0 20px;
+  }
+  .eliteup-mini-cart .eliteup-mini-cart-summary {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .site-main-slider {
+    margin-bottom: 10px;
+  }
+  .site-block-row {
+    padding: 10px 0;
+  }
+  .eliteup-iconbox {
+    margin-bottom: 15px;
+  }
+  .products-grid {
+    margin: 0;
+  }
+  .about-store {
+    padding-top: 15px;
+  }
+  .about-store h2 {
+    line-height: 115%;
+  }
+  .about-store .more-pictures .column {
+    margin-bottom: 1.250rem;
+  }
+  .best-collection .colection-2,
+  .best-collection .colection-3,
+  .best-collection .colection-4,
+  .best-collection .colection-5 {
+    padding-top: 10px;
+  }
+  .newsletter-box {
+    min-height: 300px;
+  }
+  .site-footer {
+    padding-top: 10px;
+  }
+  .site-footer .columns {
+    margin-bottom: 10px;
+  }
+  .site-footer .bottom-footer {
+    text-align: center;
+  }
+  .site-footer .bottom-footer .columns {
+    margin-bottom: 0;
+  }
+  .site-footer .bottom-footer p {
+    line-height: 40px;
+  }
+  .site-footer .bottom-footer .text-right {
+    text-align: center !important;
+  }
+  .eliteup-widget-panel {
+    width: 270px;
+  }
+}

@@ -1,0 +1,57 @@
+.eliteup-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  .banner_image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    width: -webkit-calc(100% + 50px);
+    width: calc(100% + 50px);
+    max-width: none;
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    transition: 0.55s all ease;
+    -webkit-transition: 0.55s all ease;
+    -moz-transition: 0.55s all ease;
+    -o-transition: 0.55s all ease;
+    &:after {
+      transition: all 250ms ease-out;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      content: "";
+      left: 0;
+      background: rgba(0,0,0,0.01);
+    }
+  }
+  &:hover .banner_image {
+    -webkit-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+    &:after {
+      background: rgba(0,0,0,0.4);
+    }
+  }
+  .figcaption {
+    position: absolute;
+    font-family: $secondary-font;
+    width: 100%;
+    bottom:36%;
+    font-size: 200%;
+    line-height: 1.7;
+    text-align: center;
+    color: #fff;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+  }
+}

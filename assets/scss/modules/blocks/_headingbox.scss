@@ -1,0 +1,44 @@
+.eliteup-heading-box {
+  text-align: center;
+  margin-bottom: 15px;
+  .eliteup-heading-box-holder {
+    display: inline-block;
+    h3 {
+      position: relative;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.5;
+      text-decoration: none;
+      padding-bottom: 15px;
+      letter-spacing: .09em;
+      margin: 0;
+      text-transform: uppercase;
+      &:after {
+        content: "";
+        color: $main-color;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 1px;
+        width:40px;
+        margin-left: -20px;
+        border-top: 1px solid;
+      }
+    }
+    h4 {
+      color: $main-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.3;
+      letter-spacing: .1em;
+      margin: 0;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    p {
+      padding-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.map-box {
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 30px;
+  .map-holder {
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 12;
+    #map {
+      min-height: 300px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+    }
+  }
+}
+
+.contact-form {
+  background-color: darken($background-color,3%);
+  padding: 40px 70px;
+  h3 {
+    font-size: 24px;
+  }
+  button[type=submit] {
+    background: transparent;
+    border: $main-color solid 1px;
+    color: $main-color;
+    font-size: 12px;
+    line-height: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1em 2em;
+    &:hover {
+      background: $main-color;
+      color: #fff;
+    }
+  }
+}
+.contact-address {
+  background: lighten($main-color,5%);
+  padding: 40px 70px;
+  color: #fff;
+  h3 {
+    font-size: 24px;
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    li {
+      font-size: 17px;
+      margin-bottom: 20px;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+  .socials {
+    display: inline-block;
+    margin: 20px auto;
+    li {
+      float: left;
+      margin: 0 10px;
+      a {
+        color: #fff;
+        font-size: 23px;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}

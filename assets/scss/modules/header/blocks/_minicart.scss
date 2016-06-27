@@ -1,0 +1,266 @@
+.mini-cart-one {
+  float: right;
+  a.mini-cart-link {
+    color:$heading-color;
+    i {
+      font-size: 1em;
+      color:$main-color;
+    }
+  }
+}
+.sticky-mini-cart {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  a.mini-cart-link {
+    color: $main-color;
+    line-height: 65px;
+    font-size: 16px;
+    i {
+      &:before {
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+}
+/* #Widget panel
+--------------------------------------------------------------- */
+.eliteup-widget-panel {
+  width: 410px;
+}
+.eliteup-widget-panel {
+  position: fixed;
+  top: 0;
+  right: -410px;
+  z-index: 1020;
+  color: $text-color;
+  height: 100%;
+  overflow: hidden;
+  background: $background-color;
+}
+.csstransforms .eliteup-widget-panel {
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: -moz-transform 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: -o-transform 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.csstransforms3d .widget-panel-open .eliteup-widget-panel {
+  -webkit-transform: translate3d(-410px, 0, 0); -moz-transform: translate3d(-410px, 0, 0); -ms-transform: translate3d(-410px, 0, 0); -o-transform: translate3d(-410px, 0, 0); transform: translate3d(-410px, 0, 0);
+}
+.no-csstransforms3d .widget-panel-open .eliteup-widget-panel {
+  -webkit-transform: translateX(-410px); -moz-transform: translateX(-410px); -ms-transform: translateX(-410px); -o-transform: translateX(-410px); transform: translateX(-410px);
+}
+.eliteup-widget-panel-scroll {
+  width: auto;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.eliteup-widget-panel-content {
+  width: 100%;
+  padding: 0 37px;
+}
+.eliteup-widget-panel-header {
+  position: relative;
+  z-index: 101;
+  text-align: right;
+  width: 100%;
+  padding: 27px 0 26px;
+  border-bottom: 1px solid $border-color;
+}
+
+/* Close button */
+#eliteup-widget-panel-close {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  color: $heading-color;
+}
+#eliteup-widget-panel-close:hover {
+  color: $main-color;
+}
+/* Mini cart */
+
+/* Mini cart: Cart list */
+.eliteup-mini-cart .cart_list {
+  padding-bottom: 54px;
+  margin: 0;
+}
+.no-touch .eliteup-mini-cart .cart_list {
+  padding-bottom: 244px; /* Height of the '.eliteup-mini-cart-summary' container */
+}
+.eliteup-mini-cart .cart_list li {
+  display: table;
+  line-height: 22px;
+  width: 100%;
+  margin: 0;
+  padding: 14px 0;
+  overflow: hidden;
+  border-bottom: 1px solid $border-color;
+}
+.eliteup-mini-cart .cart_list li:last-child {
+  border-bottom: 0 none;
+}
+.eliteup-mini-cart .cart_list .product-image-wrap,
+.eliteup-mini-cart .cart_list .product-details-wrap {
+  display: table-cell;
+}
+.eliteup-mini-cart .cart_list .product-image-wrap {
+  width: 20%;
+  vertical-align: top;
+}
+.eliteup-mini-cart .cart_list .product-image-wrap img {
+  width: 58px;
+  height: auto;
+}
+.eliteup-mini-cart .cart_list .product-details-wrap {
+  position: relative;
+  vertical-align: middle;
+  width: 80%;
+  padding-left: 5px;
+}
+.eliteup-mini-cart .cart_list .product-details-wrap .remove {
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+  height: 30px;
+  &:hover {
+    color:$heading-color;
+  }
+}
+.eliteup-mini-cart .cart_list .product-title {
+  display: block;
+  font-size: 16px;
+  color: $heading-color;
+  padding-right: 25px;
+  padding-bottom: 3px;
+  &:hover {
+    color:$main-color;
+  }
+}
+
+.eliteup-mini-cart .cart_list .variation {
+  padding: 1px 0 3px;
+}
+.eliteup-widget-panel.light .eliteup-mini-cart .cart_list .variation {
+  color: inherit;
+}
+.eliteup-mini-cart .cart_list .amount {
+  float: right;
+  display: inline-block;
+  font-size: 14px;
+  color: $main-color;
+  width: 25%;
+  text-align: right;
+  margin-top: 0;
+}
+
+.eliteup-mini-cart .cart_list .quantity {
+  display: inline-block;
+  width: 75%;
+}
+/* Mini cart: Summary */
+.eliteup-mini-cart .eliteup-mini-cart-summary {
+}
+.eliteup-mini-cart .total {
+  line-height: 18px;
+  padding: 16px 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.eliteup-mini-cart .total strong {
+  font-size: 18px;
+  font-weight: normal;
+  color: $heading-color;
+}
+
+.eliteup-mini-cart .total .eliteup-mini-cart-subtotal {
+  float: right;
+}
+.eliteup-mini-cart .total .eliteup-mini-cart-subtotal .amount {
+  font-size: 18px;
+  color: $main-color;
+}
+
+.eliteup-mini-cart .buttons {
+  padding: 37px 0;
+}
+.eliteup-mini-cart .buttons .button {
+  display: block;
+  padding: 17px 0;
+  text-align: center;
+}
+.eliteup-mini-cart .buttons .button.view-cart {
+  margin-bottom: 12px;
+  padding: 15px 0;
+  border: 1px solid $heading-color;
+  background: none;
+  color: $heading-color;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  &:hover {
+    color: $main-color;
+    border-color: $main-color;
+  }
+}
+body.dark .eliteup-mini-cart .buttons .button.view-cart {
+  border-color: $text-color;
+  color: $text-color;
+}
+.button.checkout {
+  background: $heading-color;
+  border-color: $heading-color;
+  color: $background-color;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  &:hover {
+    background: $main-color;
+    border-color: $main-color;
+    color: $background-color;
+
+  }
+}
+body.dark .button.checkout {
+  background: $main-color;
+  border-color: $main-color;
+  color: #fff;
+  &:hover {
+    background: transparent;
+    border-color: $main-color;
+    color: $main-color;
+  }
+}
+/* Mini cart: Summary - Absolute positioned */
+.eliteup-mini-cart .eliteup-mini-cart-summary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 37px;
+}
+
+.device-xxs {
+  .mini-cart-one {
+    position: absolute;
+    right: 15px;
+    .mini-cart-link {
+      i {
+        font-size: 18px;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}

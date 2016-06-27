@@ -1,0 +1,34 @@
+.accordion {
+  background: transparent;
+  border-color: $border-color;
+}
+.accordion-title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  color: $heading-color;
+  border-color: $border-color;
+  &:hover,
+  &:focus {
+    color: $main-color;
+    background: none;
+  }
+  &:before {
+      display: inline-block;
+      font: normal normal normal 32px/1 'Nucleo Outline';
+      speak: none;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  &:before {
+    content: "\ea6c";
+    font-size: 16px;
+  }
+}
+.is-active>.accordion-title:before {
+  content: '\ea6a';
+}
+.accordion-content {
+  background: transparent;
+  border-color: $border-color;
+}

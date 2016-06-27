@@ -1,0 +1,76 @@
+.checkout_content {
+  margin-top: 50px;
+  h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  table thead th {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .shop_table {
+    th {
+      color: $heading-color;
+    }
+  }
+  .cart-subtotal {
+    color: $heading-color;
+  }
+  #shipping_method {
+    list-style: none;
+    margin: 0;
+    li label{
+      color: $text-color;
+    }
+  }
+  div.create-account {
+    display: none;
+  }
+  div.shipping_address {
+    display: none;
+  }
+  .order-total .amount {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $heading-color;
+  }
+  .woocommerce-checkout-payment {
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        border-bottom: $border-color solid 1px;
+        margin-bottom: 15px;
+      }
+      .payment_method_paypal {
+        img {
+          max-height: 50px;
+        }
+      }
+    }
+  }
+  .wc-terms-and-conditions {
+    margin-top: 30px;
+    a {
+      color: $main-color;
+    }
+  }
+  .checkout_left_wrapper {
+    margin-right: 60px;
+  }
+  .woocommerce-checkout-review-order {
+    input[type=submit] {
+      width: 100%;
+      border: $main-color solid 2px;
+      background: $main-color;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &:hover {
+        background: transparent;
+        color: $main-color;
+      }
+    }
+  }
+}

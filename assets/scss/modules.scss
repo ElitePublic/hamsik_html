@@ -1,0 +1,50 @@
+//global partials
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'animations';
+
+@import 'modules/header/header';
+@import 'modules/slider/slider';
+@import 'modules/blocks/product-slider';
+@import 'modules/blocks/iconbox';
+@import 'modules/blocks/headingbox';
+@import 'modules/blocks/productslist';
+@import 'modules/blocks/about-store';
+@import 'modules/blocks/action-box';
+@import 'modules/blocks/number-box';
+@import 'modules/blocks/team-member';
+@import 'modules/blocks/accordion';
+@import 'modules/blocks/progress-bar';
+@import 'modules/blocks/testimonial-box';
+@import 'modules/blocks/best-collection';
+@import 'modules/blocks/eliteup-banner';
+@import 'modules/blocks/newsletter-box';
+@import 'modules/blocks/latest-instagram-box';
+//Inner Page
+@import 'modules/blocks/page-header';
+@import 'modules/blocks/site-sidebar';
+@import 'modules/blocks/shop-toolbar';
+@import 'modules/blocks/paginator';
+//Single Product
+@import 'modules/blocks/product-single-image';
+//Shopping Cart
+@import 'modules/blocks/shopping-cart';
+//Checkout page
+@import 'modules/blocks/checkout';
+//Blog
+@import 'modules/blocks/blog-list';
+@import 'modules/blocks/blog-single';
+@import 'modules/blocks/blog-sidebar';
+//About Us
+@import 'modules/blocks/about-us';
+//Contact Us
+@import 'modules/blocks/contact-us';
+
+//FAQ Pages
+@import 'modules/blocks/faq';
+
+@import 'modules/footer/footer';
+@import 'modules/blocks/spacing';
+
+

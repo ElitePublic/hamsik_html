@@ -1,0 +1,85 @@
+.site-footer {
+  padding-top: 30px;
+  h3 {
+    position: relative;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: $border-color solid 1px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  ul {
+    margin: 0;
+    list-style: none;
+    li {
+      a {
+        line-height: 30px;
+        color: $text-color;
+        &:hover {
+          color: $main-color;
+        }
+        &:before {
+          content: "\eaf7";
+          display: inline-block;
+          position: relative;
+          font: normal normal normal 16px 'Nucleo Outline';
+          top:2px;
+          speak: none;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+        }
+      }
+    }
+  }
+  .shop_location {
+    text-align: center;
+    h3 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      i {
+        color: $main-color;
+        margin-right: 5px;
+      }
+    }
+    a {
+      color:$main-color;
+    }
+    .socials {
+      display: inline-block;
+      margin: 0 auto;
+      li {
+        float: left;
+        margin: 0 10px;
+      }
+      a {
+        color:$heading-color;
+        font-size: 16px;
+        &:before {
+          display: none;
+        }
+        &:hover {
+          color:$main-color;
+        }
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  .bottom-footer {
+    margin-top: 30px;
+    border-top: $border-color solid 1px;
+    line-height: 50px;
+    p {
+      line-height: 50px;
+      margin: 0;
+    }
+  }
+}
