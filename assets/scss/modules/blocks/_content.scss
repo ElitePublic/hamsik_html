@@ -1,0 +1,236 @@
+.hamsik-content {
+    ul{
+        margin-left: 0;
+        list-style: outside none none;
+        li{
+            padding-bottom: 85px;
+            .blockquote{
+                text-align: center;
+                border: 2px solid $text-color-category;
+                .icon-quote{
+                    font-size: 26px;
+                    height: 60px;
+                    width: 60px;
+                    line-height: 60px;
+                    margin: 0 auto;
+                    margin: 30px auto;
+                    color: $text-color-category;
+                    background: $main-color;
+                }
+                h1{
+                    max-width: 500px;
+                    margin: 0 auto;
+                    font-size: 26px;
+                    letter-spacing: 0.8px;
+                    line-height: 36px;
+                    font-family: $secondary-font;
+                    font-weight: bold;
+                    padding-bottom: 30px;
+                    a{
+                        color: $text-color-category;
+                    }
+                }
+                .post-date{
+                    border-top: 1px solid $text-color-category;
+                    max-width: 300px;
+                    margin: 0 auto;
+                    padding-bottom: 100px;
+                    font-size: 12px;
+                    line-height: 23px;
+                    letter-spacing: 0.8px;
+                    color: $text-color-category;
+                    padding-bottom: 100px;
+                    padding-top: 30px;
+                    font-family: $time-font;
+                    i{
+                        font-size: 16px;
+                        color: $main-color;
+                        padding-right: 10px;
+                    }
+                }
+                .home{
+                    .content{
+                        .hover-blog{
+                            position: relative; 
+                            .color-content{
+                                position: relative;
+                                .icon-content{
+                                    text-align: left;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+            .home{
+                .content{
+                    background: $background-footer;
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 1;
+                    img{
+                        backface-visibility: hidden;
+                        height: auto;
+                        opacity: 1;
+                        transform: scale3d(1, 1, 1);
+                        transition: all 0.3s ease 0s;
+                        vertical-align: middle;
+                        width: 100%;
+                        &:hover{
+                            opacity: 0.8;
+                            transform: scale3d(1.05, 1.05, 1.05);
+                        }
+                    }
+                    .hover-blog{
+                        opacity: 1;
+                        position: relative;
+                        vertical-align: middle;
+                        width: 100%;
+                        top: calc(50% + 154px);
+                        margin-left: 0;
+                        margin-right: 0;
+                        .color-content{
+                            background: $background-footer;
+                            width: 100%;
+                            height: 60px;
+                            line-height: 60px;
+                            .icon-content{
+                                font-size: 14px;
+                                padding-left: 15px;
+                                a{
+                                    padding-right: 15px;
+                                    color: $heading-color-topbar;
+                                }
+                            }
+                            ul{
+                                line-height: 60px;
+                                float: right;
+                                li{
+                                    display: inline-block;
+                                    padding-right: 25px;
+                                    positive: relative;
+                                    padding-bottom: 0;
+                                    
+                                    .entry-icon {
+                                        color: $main-color;
+                                        display: inline-block;
+                                        padding-right: 5px;
+                                    }
+                                    a{
+                                       color: $heading-color-topbar; 
+                                       font-family: $text-awesome;
+                                    }
+                                    &:last-child{
+                                        padding-right: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+            .text-content{
+                margin: 0 auto;
+                max-width: 685px;
+                text-align: center;
+                h3 {
+                    padding-top: 20px;
+                    display: inline-block;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    a{
+                        background: $background-category;
+                        font-size: 13px;
+                        color: $text-color-category;
+                        line-height: 25px;
+                        letter-spacing: 0.8px;
+                        padding: 5px 12px;
+                    }
+                }
+                h2{
+                    font-size: 26px;
+                    letter-spacing: 0.8px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    font-family: $subtitle-font;
+                    font-weight: bold;
+                    position: relative;
+                    a{
+                        color: $background-footer;
+                    }
+                    &:after{
+                        border-bottom: 1px solid $text-color-category;
+                        bottom: calc(50% - 40px);
+                        content: " ";
+                        display: block;
+                        height: 0;
+                        left: calc(50% - 150px);
+                        position: absolute;
+                        width: 300px;
+                    }
+                }
+                .post-date{
+                    font-size: 12px;
+                    line-height: 23px;
+                    letter-spacing: 0.8px;
+                    color: $text-color-category;
+                    padding-bottom: 30px;
+                    padding-top: 30px;
+                    font-family: $time-font;
+                    i{
+                        font-size: 16px;
+                        color: $main-color;
+                        padding-right: 10px;
+                    }
+                }
+                .entry_readmore {
+                    padding-top: 10px;
+                    .more-link{ 
+                        background: transparent;
+                        border: 2px solid $border-buttom;
+                        color: $border-buttom;
+                        display: inline-block;
+                        font-size: 12px;
+                        line-height: 37px;
+                        width: 170px;
+                        &:hover{
+                            background: $main-color;
+                            border: 2px solid $main-color;
+                            color: $title-color;
+                            display: inline-block;
+                            font-size: 12px;
+                            line-height: 37px;
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-pagination{
+        padding-bottom: 30px;
+        ul{
+            text-align: center;
+            li{
+                background: $color-time;
+                border: 1px solid $color-time;
+                color: $text-color-category;
+                display: inline-block;
+                border-radius: 100%;
+                height: 35px;
+                margin-right: 10px;
+                text-align: center;
+                width: 35px;
+                line-height: 30px;
+                padding-bottom: 0;
+                &:hover{
+                    background: $background-category;
+                    border: 1px solid $background-category;
+                    color: $text-color-category;
+                }
+            }
+        }
+    }
+}
+

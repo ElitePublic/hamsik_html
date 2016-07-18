@@ -1,0 +1,55 @@
+
+@media only screen and (max-width: 840px) {
+    .flexslider{
+        .flex-direction-nav {
+            a{
+                &:before{
+                    font-size: 24px;
+                }
+            }
+            .flex-prev{
+                opacity: 0;
+            }
+            .flex-next{
+                opacity: 0;
+            }
+        }
+    }
+            //* Content *//
+    .site-main-content{
+        .featured {
+            .effect-zoom{
+                .text-content{
+                    bottom: calc(50% - 115px);
+                    margin-left: 20px;
+                }
+            }
+        } 
+        .content-blog{
+            .hamsik-content {
+                ul{
+                    li{
+                        .home{
+                            .content{
+                                iframe {
+                                    height: 440px;
+                                }
+                                .hover-blog{
+                                    top: calc(50% + 160px);
+                                    ul{
+                                        li{
+                                            padding-right: 9px;
+                                            a{
+                                                font-size: 14px;
+                                            }
+                                         }
+                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}

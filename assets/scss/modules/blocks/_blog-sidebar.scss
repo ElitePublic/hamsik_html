@@ -1,17 +1,321 @@
-.site_sidebar {
-  .posts_list {
-    li {
-      margin-bottom: 20px;
-      a {
-        color: $main-color;
-        display: block;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      .date {
-        font-style: italic;
-      }
-    }
-  }
+.text-center{
+    text-align: center;
+    border-bottom: 1px solid $color-sidebar;
+    max-width: 230px;
+    margin: 0 auto;
 }
+.title-hamsik {
+    padding-bottom: 50px;
+}
+.content-blog{
+    padding-top: 80px;
+    .about-me {
+        @extend .text-center;
+        .img-me{
+            text-align: center;
+            img{
+                padding-bottom: 30px;
+                border-radius: 100%;
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            font-family: $text-sidebar;
+            color: $color-sidebar;
+            margin: 0 auto;
+            max-width: 230px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .admin{
+            text-align: center;
+            padding-bottom: 50px;
+        }
+    }
+    .newletter{
+        @extend .text-center;
+        .title-hamsik{
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        .nsu-form{
+            position:relative;
+            input::-moz-placeholder,
+            textarea::-moz-placeholder {
+                color: $text-color-category;
+            }
+            .nsu-field{
+                background: $background-color-2;
+                margin-bottom: 45px;
+            }
+            i{
+                color: $border-buttom;
+                font-size: 14px;
+                height: 40px;
+                line-height: 40px;
+                position: absolute;
+                right: 0;
+                width: 40px;    
+            }
+            .nsu-submit{
+                background: transparent none repeat scroll 0 0;
+                border: medium none;
+                bottom: 0;
+                color: transparent;
+                height: 40px;
+                position: absolute;
+                right: 0;
+                width: 40px;
+            }
+        }
+        h4{
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            font-family: $body-font;
+            color: $color-sidebar;
+            margin: 0 auto;
+            max-width: 230px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+    }
+    .category-home{
+        position:relative;
+        .title-hamsik{
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        @extend .text-center;
+        #accordion {
+            visibility:hidden;
+            text-align: left;
+            padding-bottom: 50px;
+                ul {
+                    padding:0;
+                    margin:0;
+                    list-style:none;
+                    .top.active.has-sub{
+                        ul{
+                            
+                        }
+                    }
+                    .top.has-sub{
+                        a{
+                            padding-left: 35px;
+                        }
+                    }
+                    li{
+                        border-bottom: 1px dashed $color-time;
+                        font-family:Arial, sans-serif;
+                        font-size:14px;
+                        padding: 0;
+                        margin:0;
+                        overflow:hidden;
+                        cursor: pointer;
+                        -ms-user-select:none;
+                        -mos-user-select:none;
+                        -webkit-user-select:none;
+                        -o-user-select:none;
+                        user-select:none;
+                        padding: 15px 0;
+                        &:last-child{
+                            border-bottom: none;
+                            padding-bottom: 0;
+                        }
+                        .caret {
+                            color:inherit;
+                            display:inline-block;
+                            margin-top:0px;
+                            margin-right:12px;
+                            width: 0;
+                            height: 0;
+                            overflow:hidden;
+                            border-style:solid;
+                            border-width:6px; 
+                            position:relative;
+                            border-bottom:6px solid transparent;
+                            border-right: none;
+                            border-left-color:initial;
+                            border-top-color: transparent;
+                        }
+                        .caret.active {
+                            margin-bottom:2px;
+                            margin-right:6px;
+                            border-bottom:none;
+                            border-right: 6px solid transparent;
+                            border-left-color: transparent;
+                            border-top-color:initial;
+                        }
+                        div{
+                            font-family: $secondary-font;
+                            color: $text-color-category;
+                            ul {
+                                padding:0px 0;
+                                li{
+                                    margin-left:30px;
+                                    &:last-child{
+                                        border-bottom: 1px dashed $color-time;
+                                    }
+                                    a {
+                                        padding-left:30px;
+                                        padding-top:8px;
+                                        padding-bottom:8px;
+                                        color:#333;
+                                        font-weight:normal;
+                                        font-size:13px;
+                                        text-decoration:none;
+                                        display:block;
+                                        line-height:1;
+                                        transition:background-color 0.3s;
+                                        &:hover{
+                                             background-color:#eee;
+                                        }
+                                        .active{
+                                            background-color:#333;
+                                            color:white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    .reccent-post{
+        .title-hamsik{
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        @extend .text-center;
+        ul{
+            text-align: left;
+            margin-left: 0;
+            list-style-type: none;
+            li{
+                padding-bottom: 10px;
+                .post-title{
+                    color: $text-color-category;
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: 0.8px;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .reccent-widget{
+            .hamsik {
+                display: inline-block;
+                padding-left: 15px;
+                .post-date {
+                    font-size: 11px;
+                    letter-spacing: 0.8px;
+                    line-height: 23px;
+                    color: $color-sidebar;
+                    font-family: $time-font;
+                    i{
+                        font-size: 14px;
+                        padding-right: 10px;
+                        color: $color-time;
+                    }
+                }
+            }
+        }
+        .image-reccent {
+            padding-top: 25px;
+            padding-bottom: 50px;
+        }
+
+    }
+    .face-post{
+        .title-hamsik{
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        @extend .text-center;
+        h4{
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            padding-top: 45px;
+            margin-bottom: 20px;
+            color: $color-sidebar;
+        }
+        .nsu-form{
+            input::-moz-placeholder,
+            textarea::-moz-placeholder {
+                color: #000;
+                text-align: center;
+            }
+            .nsu-submit{
+                border: 2px solid $color-sidebar;
+                background: $background-color;
+                padding: 10px 18px;
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 0.8px;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+                &:hover{
+                    background: $background-category;
+                    color: $border-buttom;
+                }
+            }
+            .nsu-field {
+                border: 1px solid $color-time;
+                &:focus{
+                    border: 1px solid $border-buttom;
+                }
+            }
+            .wpcf7-form-control.wpcf7-text{
+                border: 1px solid $color-time;
+                margin-bottom: 10px;
+                &:focus{
+                    border: 1px solid $border-buttom;
+                }
+            }
+        }
+        h4{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    .image-post{
+        @extend .text-center;
+        border-bottom: none;
+        .title-hamsik{
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        ul{
+            margin-left: 0;
+            li{
+                display: inline-block;
+                padding-bottom: 10px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

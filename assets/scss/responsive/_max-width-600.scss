@@ -1,0 +1,104 @@
+
+@media only screen and (max-width: 600px) {
+    .flexslider{
+        .slides{
+            .content-header{
+                .site-top-bar{
+                    padding-top: 10px;
+                    .top-bar-menu {
+                        float: left;
+                        li{
+                            margin: 0 5px;
+                        }
+                    }
+                    .search{
+                        width: 100%;
+                        .search-field{
+                            height: 30px;
+                        }
+                        .search-submit {
+                            height: 30px;
+                        }
+                        .fa{
+                            height: 30px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                header {
+                    padding-top: 40px;
+                }
+                .site-main-navigation.sticky-enabled{
+                    display: none;
+                }
+                .content-text-1{
+                    display: none;
+                }
+                .header-section{
+                    .mobile-main-menu-btn{
+                        display: block;
+                        left: 0;
+                        position: relative;
+                        top: 0;
+                        padding-bottom: 20px;
+                        padding-top: 50px;
+                        .mobile-menu-icon{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .flex-direction-nav {
+            a{
+                &:before{
+                    font-size: 24px;
+                }
+            }
+            .flex-prev{
+                opacity: 0;
+            }
+            .flex-next{
+                opacity: 0;
+            }
+        }
+    }
+        //* Content *//
+    .site-main-content{
+        .featured {
+            .effect-zoom{
+                .text-content{
+                    bottom: calc(50% - 65px);
+                    margin-left: 10px;
+
+                }
+            }
+        } 
+        .content-blog{
+            .hamsik-content {
+                ul{
+                    li{
+                        .home{
+                            .content{
+                                iframe {
+                                    height: 310px;
+                                }
+                                .hover-blog{
+                                    top: calc(50% + 96px);
+                                    ul{
+                                        li{
+                                            padding-right: 9px;
+                                            a{
+                                                font-size: 14px;
+                                             }
+                                         }
+                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}

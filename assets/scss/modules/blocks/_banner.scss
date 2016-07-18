@@ -1,0 +1,78 @@
+.site-main-content{
+    padding-top: 20px;
+    .featured{
+        .effect-zoom{
+            position: relative;
+            float: left;
+            overflow: hidden;
+            height: auto;
+            cursor: pointer;
+            .featured-post-content{
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                &:before{
+                    pointer-events: none;
+                }
+            }
+            .text-content {
+                bottom: calc(50% - 140px);
+                margin-left: 30px;
+                position: absolute;
+                width: auto;
+                z-index: 99;
+                h3{
+                    background: $background-category;
+                    color: $border-buttom;
+                    font-size: 11px;
+                    letter-spacing: 0.8px;
+                    line-height: 25px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                    width: 70px;
+                }
+                h2{
+                    color: $title-color;
+                    font-family: $subtitle-font;
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: 0.8px;
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                }
+                .post-date {
+                    font-size: 12px;
+                    letter-spacing: 0.8px;
+                    color: $heading-color-topbar;
+                    i{
+                        padding-right: 5px;
+                        color: $main-color;
+                    }
+                }
+            }
+            img{
+                position: relative;
+                display: block;
+                /* min-height: 100%; */
+                max-width: 100%;
+                opacity: 1;	
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: scale3d(1,1,1);
+                transform: scale3d(1,1,1);
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            &:hover{
+                img{
+                    opacity: 0.8;
+                    -webkit-transform: scale3d(1.05,1.05,1.05);
+                    transform: scale3d(1.05,1.05,1.05);
+                }
+            }
+        }
+    }
+}

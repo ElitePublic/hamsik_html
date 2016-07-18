@@ -1,107 +1,135 @@
-@media only screen and (max-width: 769px) {
-  .site-top-bar {
+@media only screen and (max-width: 480px) {
+  .flexslider .slides .content-header .site-top-bar {
+    padding-top: 10px; }
+    .flexslider .slides .content-header .site-top-bar .top-bar-menu {
+      float: left; }
+      .flexslider .slides .content-header .site-top-bar .top-bar-menu li {
+        margin: 0 5px; }
+    .flexslider .slides .content-header .site-top-bar .search {
+      width: 100%; }
+      .flexslider .slides .content-header .site-top-bar .search .search-field {
+        height: 30px; }
+      .flexslider .slides .content-header .site-top-bar .search .search-submit {
+        height: 30px; }
+      .flexslider .slides .content-header .site-top-bar .search .fa {
+        height: 30px;
+        line-height: 30px; }
+  .flexslider .slides .content-header header {
+    padding-top: 40px; }
+  .flexslider .slides .content-header .site-main-navigation.sticky-enabled {
+    display: none; }
+  .flexslider .slides .content-header .content-text-1 {
+    display: none; }
+  .flexslider .slides .content-header .header-section .mobile-main-menu-btn {
+    display: block;
+    left: 0;
     position: relative;
-    z-index: 1002;
-  }
-  .site-header .header-logo {
-    margin: 20px 0;
-  }
-  .mobile-main-menu-btn {
-    display: block;
-    margin-top: 20px;
-  }
-  .site-main-navigation
-.main-menu {
-    display: none;
-  }
-  .mini-search {
-    top: -68px;
-  }
-  .eliteup-iconbox {
-    margin-bottom: 30px;
-  }
-  .about-store {
-    padding-top: 30px;
-    padding-left: .9375rem;
-    padding-right: .9375rem;
-  }
-  .best-collection .colection-3,
-  .best-collection .colection-4 {
-    padding-top: 30px;
-  }
-  .site-footer .columns {
-    margin-bottom: 30px;
-  }
-  .site-footer .bottom-footer {
-    text-align: center;
-  }
-  .site-footer .bottom-footer .columns {
-    margin-bottom: 0;
-  }
-  .site-footer .bottom-footer .text-right {
-    text-align: center !important;
-  }
-  .site-footer .shop_location .socials {
-    display: block;
-  }
-  .eliteup-widget-panel-content {
-    padding: 0 20px;
-  }
-  .eliteup-mini-cart .eliteup-mini-cart-summary {
-    padding: 0 20px;
-  }
-}
+    top: 0;
+    padding: 0 !important; }
+    .flexslider .slides .content-header .header-section .mobile-main-menu-btn .mobile-menu-icon {
+      margin: 0 auto; }
+  .flexslider .flex-direction-nav a:before {
+    font-size: 24px; }
+  .flexslider .flex-direction-nav .flex-prev {
+    opacity: 0; }
+  .flexslider .flex-direction-nav .flex-next {
+    opacity: 0; }
 
-@media only screen and (max-width: 641px) {
-  .site-main-slider {
-    margin-bottom: 10px;
-  }
-  .site-block-row {
-    padding: 10px 0;
-  }
-  .eliteup-iconbox {
-    margin-bottom: 15px;
-  }
-  .products-grid {
-    margin: 0;
-  }
-  .about-store {
-    padding-top: 15px;
-  }
-  .about-store h2 {
-    line-height: 115%;
-  }
-  .about-store .more-pictures .column {
-    margin-bottom: 1.250rem;
-  }
-  .best-collection .colection-2,
-  .best-collection .colection-3,
-  .best-collection .colection-4,
-  .best-collection .colection-5 {
-    padding-top: 10px;
-  }
-  .newsletter-box {
-    min-height: 300px;
-  }
-  .site-footer {
-    padding-top: 10px;
-  }
-  .site-footer .columns {
-    margin-bottom: 10px;
-  }
-  .site-footer .bottom-footer {
-    text-align: center;
-  }
-  .site-footer .bottom-footer .columns {
-    margin-bottom: 0;
-  }
-  .site-footer .bottom-footer p {
-    line-height: 40px;
-  }
-  .site-footer .bottom-footer .text-right {
-    text-align: center !important;
-  }
-  .eliteup-widget-panel {
-    width: 270px;
-  }
-}
+  .site-main-content .featured .effect-zoom .text-content {
+    bottom: calc(50% - 65px) !important;
+    margin-left: 10px !important; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content iframe {
+    height: 245px !important; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog {
+    top: calc(50% + 62px) !important; }
+    .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog ul li {
+      padding-right: 10px !important; }
+      .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog ul li a {
+        font-size: 8px !important; }
+  .site-main-content .site-block-row .latest-instagram-box {
+    min-height: auto !important; }
+    .site-main-content .site-block-row .latest-instagram-box .instagram-follow-link {
+      padding: 5px 20px; }
+
+  .site-footer h4 {
+    padding-top: 0; }
+  .site-footer .icon-footer {
+    padding-bottom: 10px; } }
+@media only screen and (max-width: 600px) {
+  .flexslider .slides .content-header .site-top-bar {
+    padding-top: 10px; }
+    .flexslider .slides .content-header .site-top-bar .top-bar-menu {
+      float: left; }
+      .flexslider .slides .content-header .site-top-bar .top-bar-menu li {
+        margin: 0 5px; }
+    .flexslider .slides .content-header .site-top-bar .search {
+      width: 100%; }
+      .flexslider .slides .content-header .site-top-bar .search .search-field {
+        height: 30px; }
+      .flexslider .slides .content-header .site-top-bar .search .search-submit {
+        height: 30px; }
+      .flexslider .slides .content-header .site-top-bar .search .fa {
+        height: 30px;
+        line-height: 30px; }
+  .flexslider .slides .content-header header {
+    padding-top: 40px; }
+  .flexslider .slides .content-header .site-main-navigation.sticky-enabled {
+    display: none; }
+  .flexslider .slides .content-header .content-text-1 {
+    display: none; }
+  .flexslider .slides .content-header .header-section .mobile-main-menu-btn {
+    display: block;
+    left: 0;
+    position: relative;
+    top: 0;
+    padding-bottom: 20px;
+    padding-top: 50px; }
+    .flexslider .slides .content-header .header-section .mobile-main-menu-btn .mobile-menu-icon {
+      margin: 0 auto; }
+  .flexslider .flex-direction-nav a:before {
+    font-size: 24px; }
+  .flexslider .flex-direction-nav .flex-prev {
+    opacity: 0; }
+  .flexslider .flex-direction-nav .flex-next {
+    opacity: 0; }
+
+  .site-main-content .featured .effect-zoom .text-content {
+    bottom: calc(50% - 65px);
+    margin-left: 10px; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content iframe {
+    height: 310px; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog {
+    top: calc(50% + 96px); }
+    .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog ul li {
+      padding-right: 9px; }
+      .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog ul li a {
+        font-size: 14px; } }
+@media only screen and (max-width: 840px) {
+  .flexslider .flex-direction-nav a:before {
+    font-size: 24px; }
+  .flexslider .flex-direction-nav .flex-prev {
+    opacity: 0; }
+  .flexslider .flex-direction-nav .flex-next {
+    opacity: 0; }
+
+  .site-main-content .featured .effect-zoom .text-content {
+    bottom: calc(50% - 115px);
+    margin-left: 20px; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content iframe {
+    height: 440px; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog {
+    top: calc(50% + 160px); }
+    .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog ul li {
+      padding-right: 9px; }
+      .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog ul li a {
+        font-size: 14px; } }
+@media only screen and (max-width: 960px) {
+  .site-main-content .featured .effect-zoom .text-content {
+    bottom: calc(50% - 120px);
+    margin-left: 20px; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content iframe {
+    height: 510px; }
+  .site-main-content .content-blog .hamsik-content ul li .home .content .hover-blog {
+    top: calc(50% + 193px); } }
+
+/*# sourceMappingURL=responsive.css.map */

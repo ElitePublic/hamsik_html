@@ -1,0 +1,31 @@
+
+@media only screen and (max-width: 960px) {
+    .site-main-content{
+        .featured {
+            .effect-zoom{
+                .text-content{
+                    bottom: calc(50% - 120px);
+                    margin-left: 20px;
+                }
+            }
+        }
+        .content-blog{
+            .hamsik-content {
+                ul{
+                    li{
+                        .home{
+                            .content{
+                                iframe {
+                                    height: 510px;
+                                }
+                                .hover-blog{
+                                    top: calc(50% + 193px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}

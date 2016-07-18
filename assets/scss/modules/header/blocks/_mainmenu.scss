@@ -16,6 +16,7 @@
   }
   .main-navigation-holder {
     position: relative;
+    background: $background-menu;
   }
   .main-menu {
     display: table;
@@ -45,12 +46,13 @@
 
 #primary-menu ul li > a {
   display: block;
-  line-height: 65px;
+  line-height: 50px;
   padding: 0 15px;
-  color: $heading-color;
-  font-size: 12px;
-  letter-spacing: 1px;
+  color: $heading-color-menu;
+  font-size: 13px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
+  font-weight: 600;
   @include novawpTransition(color 0.2s ease-out);
 }
 
