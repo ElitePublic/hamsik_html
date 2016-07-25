@@ -3188,7 +3188,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
       display: inline-block;
       width: auto; }
     .site .content-header .site-main-navigation {
-      z-index: 9; }
+      z-index: 10; }
       .site .content-header .site-main-navigation .sticky-mini-cart {
         display: none; }
       .site .content-header .site-main-navigation .mini-search {
