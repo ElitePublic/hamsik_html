@@ -1,8 +1,8 @@
 /*
 Error: Undefined variable: "$heading-color-topbar".
-        on line 14 of C:/xampp/htdocs/hamsik2/public_html/assets/scss/modules/header/blocks/_topbar.scss
-        from line 1 of C:/xampp/htdocs/hamsik2/public_html/assets/scss/modules/header/_header.scss
-        from line 7 of C:\xampp\htdocs\hamsik2\public_html\assets\scss\modules_dark.scss
+        on line 14 of C:/xampp/htdocs/test/hamsik/hamsik_html/assets/scss/modules/header/blocks/_topbar.scss
+        from line 1 of C:/xampp/htdocs/test/hamsik/hamsik_html/assets/scss/modules/header/_header.scss
+        from line 7 of C:\xampp\htdocs\test\hamsik\hamsik_html\assets\scss\modules_dark.scss
 
 9: @import 'modules/blocks/product-slider';
 10: @import 'modules/blocks/iconbox';
@@ -17,9 +17,9 @@ Error: Undefined variable: "$heading-color-topbar".
 19: @import 'modules/blocks/testimonial-box';
 
 Backtrace:
-C:/xampp/htdocs/hamsik2/public_html/assets/scss/modules/header/blocks/_topbar.scss:14
-C:/xampp/htdocs/hamsik2/public_html/assets/scss/modules/header/_header.scss:1
-C:\xampp\htdocs\hamsik2\public_html\assets\scss\modules_dark.scss:7
+C:/xampp/htdocs/test/hamsik/hamsik_html/assets/scss/modules/header/blocks/_topbar.scss:14
+C:/xampp/htdocs/test/hamsik/hamsik_html/assets/scss/modules/header/_header.scss:1
+C:\xampp\htdocs\test\hamsik\hamsik_html\assets\scss\modules_dark.scss:7
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -118,11 +118,11 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:39
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
-C:/Ruby23-x64/bin/scss:23:in `load'
-C:/Ruby23-x64/bin/scss:23:in `<main>'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+C:/Ruby23-x64/bin/sass:23:in `load'
+C:/Ruby23-x64/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$heading-color-topbar\".\A         on line 14 of C:/xampp/htdocs/hamsik2/public_html/assets/scss/modules/header/blocks/_topbar.scss\A         from line 1 of C:/xampp/htdocs/hamsik2/public_html/assets/scss/modules/header/_header.scss\A         from line 7 of C:\xampp\htdocs\hamsik2\public_html\assets\scss\modules_dark.scss\A \A 9: @import 'modules/blocks/product-slider';\A 10: @import 'modules/blocks/iconbox';\A 11: @import 'modules/blocks/headingbox';\A 12: @import 'modules/blocks/productslist';\A 13: @import 'modules/blocks/about-store';\A 14: @import 'modules/blocks/action-box';\A 15: @import 'modules/blocks/number-box';\A 16: @import 'modules/blocks/team-member';\A 17: @import 'modules/blocks/accordion';\A 18: @import 'modules/blocks/progress-bar';\A 19: @import 'modules/blocks/testimonial-box';"; }
+  content: "Error: Undefined variable: \"$heading-color-topbar\".\A         on line 14 of C:/xampp/htdocs/test/hamsik/hamsik_html/assets/scss/modules/header/blocks/_topbar.scss\A         from line 1 of C:/xampp/htdocs/test/hamsik/hamsik_html/assets/scss/modules/header/_header.scss\A         from line 7 of C:\xampp\htdocs\test\hamsik\hamsik_html\assets\scss\modules_dark.scss\A \A 9: @import 'modules/blocks/product-slider';\A 10: @import 'modules/blocks/iconbox';\A 11: @import 'modules/blocks/headingbox';\A 12: @import 'modules/blocks/productslist';\A 13: @import 'modules/blocks/about-store';\A 14: @import 'modules/blocks/action-box';\A 15: @import 'modules/blocks/number-box';\A 16: @import 'modules/blocks/team-member';\A 17: @import 'modules/blocks/accordion';\A 18: @import 'modules/blocks/progress-bar';\A 19: @import 'modules/blocks/testimonial-box';"; }

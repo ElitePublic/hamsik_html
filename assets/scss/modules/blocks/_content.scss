@@ -63,6 +63,10 @@
                 }
             }
             .home{
+                .title{
+                    margin: 0 0 50px;
+                    text-align: center; 
+                }
                 .content{
                     background: $background-footer;
                     display: block;
@@ -195,8 +199,9 @@
                         line-height: 37px;
                         width: 170px;
                         &:hover{
-                            background: $main-color;
-                            border: 2px solid $main-color;
+                            transition: all 250ms ease 0s;
+                            background: $border-buttom;
+                            border: 2px solid $border-buttom;
                             color: $title-color;
                             display: inline-block;
                             font-size: 12px;
@@ -233,4 +238,3 @@
         }
     }
 }
-

@@ -3157,82 +3157,90 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
     transition: all .5s ease-in-out; }
 
 .site {
-  overflow: hidden; }
-  .site .flexslider {
-    position: relative;
-    list-style: outside none none;
-    max-width: 100%;
-    margin: 0; }
-    .site .flexslider .flex-viewport ul li {
-      position: relative; }
-      .site .flexslider .flex-viewport ul li .content-header {
-        bottom: 0;
+  overflow: hidden;
+  positive: relative;
+    /*
+.flexslider{
+    .flex-direction-nav {
         height: 100%;
         opacity: 1;
         position: absolute;
-        vertical-align: middle;
-        width: 100%; }
-        .site .flexslider .flex-viewport ul li .content-header .header-section img {
+        top: 0;
+        width: 100%;
+        z-index: 9999999;
+    }
+}
+*/ }
+  .site .content-header {
+    bottom: 0;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    vertical-align: middle;
+    width: 100%; }
+    .site .content-header .site-top-bar {
+      position: relative;
+      z-index: 10; }
+    .site .content-header header {
+      position: relative;
+      z-index: 9; }
+    .site .content-header .header-section img {
+      display: inline-block;
+      width: auto; }
+    .site .content-header .site-main-navigation {
+      z-index: 9; }
+      .site .content-header .site-main-navigation .sticky-mini-cart {
+        display: none; }
+      .site .content-header .site-main-navigation .mini-search {
+        display: none; }
+    .site .content-header .content-text-1 {
+      padding-top: 285px;
+      position: relative;
+      z-index: 9; }
+      .site .content-header .content-text-1 .category-blog h2 {
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 0;
+        padding-bottom: 20px; }
+        .site .content-header .content-text-1 .category-blog h2 a {
+          font-size: 26px;
+          color: #ffffff;
+          line-height: 25px;
+          letter-spacing: 0.8px;
+          font-family: "Playfair Display";
+          font-weight: bold;
+          text-transform: uppercase; }
+      .site .content-header .content-text-1 .category-blog h3 {
+        margin-bottom: 10px; }
+        .site .content-header .content-text-1 .category-blog h3 a {
+          background: #feff86;
+          font-size: 13px;
+          color: #202020;
+          line-height: 25px;
+          letter-spacing: 0.8px;
+          padding: 5px 12px; }
+      .site .content-header .content-text-1 .entry_lines {
+        padding-top: 25px; }
+        .site .content-header .content-text-1 .entry_lines .entry-icon {
           display: inline-block;
-          width: auto; }
-        .site .flexslider .flex-viewport ul li .content-header .site-main-navigation .sticky-mini-cart {
-          display: none; }
-        .site .flexslider .flex-viewport ul li .content-header .site-main-navigation .mini-search {
-          display: none; }
-        .site .flexslider .flex-viewport ul li .content-header .content-text-1 {
-          padding-top: 285px; }
-          .site .flexslider .flex-viewport ul li .content-header .content-text-1 .category-blog h2 {
-            border-bottom: 1px solid #ffffff;
-            margin-bottom: 0;
-            padding-bottom: 20px; }
-            .site .flexslider .flex-viewport ul li .content-header .content-text-1 .category-blog h2 a {
-              font-size: 26px;
-              color: #ffffff;
-              line-height: 25px;
-              letter-spacing: 0.8px;
-              font-family: "Playfair Display";
-              font-weight: bold;
-              text-transform: uppercase; }
-          .site .flexslider .flex-viewport ul li .content-header .content-text-1 .category-blog h3 {
-            margin-bottom: 10px; }
-            .site .flexslider .flex-viewport ul li .content-header .content-text-1 .category-blog h3 a {
-              background: #feff86;
-              font-size: 13px;
-              color: #202020;
-              line-height: 25px;
-              letter-spacing: 0.8px;
-              padding: 5px 12px; }
-          .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines {
-            padding-top: 25px; }
-            .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines .entry-icon {
-              display: inline-block;
-              font-size: 16px;
-              margin-right: 3px; }
-              .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines .entry-icon i {
-                color: #feff86; }
-            .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines a {
-              font-family: "Sylfaen";
-              color: #ffffff;
-              font-size: 12px;
-              line-height: 23px;
-              letter-spacing: 0.8px; }
-            .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines ul {
-              float: right; }
-              .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines ul li {
-                display: inline-block; }
-                .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines ul li a {
-                  font-size: 14px;
-                  padding-right: 30px; }
-                .site .flexslider .flex-viewport ul li .content-header .content-text-1 .entry_lines ul li:last-child a:last-child {
-                  padding-right: 0; }
-    .site .flexslider .flex-direction-nav a {
-      height: auto;
-      color: transparent;
-      text-shadow: none; }
-      .site .flexslider .flex-direction-nav a:hover {
-        color: transparent; }
-    .site .flexslider .flex-control-nav {
-      display: none; }
+          font-size: 16px;
+          margin-right: 3px; }
+          .site .content-header .content-text-1 .entry_lines .entry-icon i {
+            color: #feff86; }
+        .site .content-header .content-text-1 .entry_lines a {
+          font-family: "Sylfaen";
+          color: #ffffff;
+          font-size: 12px;
+          line-height: 23px;
+          letter-spacing: 0.8px; }
+        .site .content-header .content-text-1 .entry_lines ul {
+          float: right; }
+          .site .content-header .content-text-1 .entry_lines ul li {
+            display: inline-block; }
+            .site .content-header .content-text-1 .entry_lines ul li a {
+              font-size: 14px;
+              padding-right: 30px; }
+            .site .content-header .content-text-1 .entry_lines ul li:last-child a:last-child {
+              padding-right: 0; }
 
 .site-main-slider {
   text-align: center;
@@ -3676,6 +3684,9 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
           position: relative; }
           .hamsik-content ul li .blockquote .home .content .hover-blog .color-content .icon-content {
             text-align: left; }
+    .hamsik-content ul li .home .title {
+      margin: 0 0 50px;
+      text-align: center; }
     .hamsik-content ul li .home .content {
       background: #202020;
       display: block;
@@ -3787,8 +3798,9 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
           line-height: 37px;
           width: 170px; }
           .hamsik-content ul li .text-content .entry_readmore .more-link:hover {
-            background: #feff86;
-            border: 2px solid #feff86;
+            transition: all 250ms ease 0s;
+            background: #202020;
+            border: 2px solid #202020;
             color: #ffffff;
             display: inline-block;
             font-size: 12px;
@@ -4441,17 +4453,65 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
   max-width: 230px;
   margin: 0 auto; }
 
-.title-hamsik {
-  padding-bottom: 50px; }
+.title {
+  background: #202020;
+  color: #ffffff;
+  height: 45px;
+  letter-spacing: 0.8px;
+  line-height: 45px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 160px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 35px; }
+  .title p {
+    line-height: 45px; }
+    .title p:before {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      top: 5px;
+      left: 5px;
+      background: #ffffff; }
+    .title p:after {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      bottom: 5px;
+      right: 5px;
+      background: #ffffff; }
+  .title span:before {
+    background: #ffffff;
+    bottom: 0;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 7px; }
+  .title span:after {
+    background: #ffffff;
+    top: 0;
+    content: "";
+    height: 7px;
+    right: 0;
+    position: absolute;
+    width: 7px; }
 
 .content-blog {
   padding-top: 80px; }
+  .content-blog .about-me .title {
+    margin-top: 0; }
   .content-blog .about-me .img-me {
     text-align: center; }
     .content-blog .about-me .img-me img {
       padding-bottom: 30px;
       border-radius: 100%; }
-  .content-blog .about-me p {
+  .content-blog .about-me h5 {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.8px;
@@ -4464,9 +4524,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
   .content-blog .about-me .admin {
     text-align: center;
     padding-bottom: 50px; }
-  .content-blog .newletter .title-hamsik {
-    padding-top: 50px;
-    padding-bottom: 30px; }
   .content-blog .newletter .nsu-form {
     position: relative; }
     .content-blog .newletter .nsu-form input::-moz-placeholder,
@@ -4504,9 +4561,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
     text-align: center; }
   .content-blog .category-home {
     position: relative; }
-    .content-blog .category-home .title-hamsik {
-      padding-top: 50px;
-      padding-bottom: 30px; }
     .content-blog .category-home #accordion {
       visibility: hidden;
       text-align: left;
@@ -4581,9 +4635,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
                   .content-blog .category-home #accordion ul li div ul li a .active {
                     background-color: #333;
                     color: white; }
-  .content-blog .reccent-post .title-hamsik {
-    padding-top: 50px;
-    padding-bottom: 30px; }
   .content-blog .reccent-post ul {
     text-align: left;
     margin-left: 0;
@@ -4613,9 +4664,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
   .content-blog .reccent-post .image-reccent {
     padding-top: 25px;
     padding-bottom: 50px; }
-  .content-blog .face-post .title-hamsik {
-    padding-top: 50px;
-    padding-bottom: 30px; }
   .content-blog .face-post h4 {
     font-size: 14px;
     line-height: 24px;

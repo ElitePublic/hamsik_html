@@ -4,13 +4,70 @@
     max-width: 230px;
     margin: 0 auto;
 }
-.title-hamsik {
-    padding-bottom: 50px;
+.title{
+        background: $border-buttom;
+        color: $title-color;
+        height: 45px;
+        letter-spacing: 0.8px;
+        line-height: 45px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        width: 160px;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 35px;
+        p{
+            line-height: 45px;
+            &:before{
+                position: absolute;
+                content: "";
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
+                top: 5px;
+                left: 5px;
+                background: $background-color;
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
+                bottom: 5px;
+                right: 5px;
+                background: $background-color;
+            }
+        }
+        span{
+            &:before{
+                background: $background-color;
+                bottom: 0;
+                content: "";
+                height: 7px;
+                left: 0;
+                position: absolute;
+                width: 7px;
+            }
+            &:after{
+                background: $background-color;
+                top : 0;
+                content: "";
+                height: 7px;
+                right: 0;
+                position: absolute;
+                width: 7px;
+            }
+        }
+    
 }
 .content-blog{
     padding-top: 80px;
     .about-me {
         @extend .text-center;
+        .title{
+            margin-top: 0;
+        }
         .img-me{
             text-align: center;
             img{
@@ -18,7 +75,7 @@
                 border-radius: 100%;
             }
         }
-        p{
+        h5{
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.8px;
@@ -36,10 +93,6 @@
     }
     .newletter{
         @extend .text-center;
-        .title-hamsik{
-            padding-top: 50px;
-            padding-bottom: 30px;
-        }
         .nsu-form{
             position:relative;
             input::-moz-placeholder,
@@ -84,10 +137,6 @@
     }
     .category-home{
         position:relative;
-        .title-hamsik{
-            padding-top: 50px;
-            padding-bottom: 30px;
-        }
         @extend .text-center;
         #accordion {
             visibility:hidden;
@@ -186,10 +235,6 @@
             }
     }
     .reccent-post{
-        .title-hamsik{
-            padding-top: 50px;
-            padding-bottom: 30px;
-        }
         @extend .text-center;
         ul{
             text-align: left;
@@ -232,10 +277,6 @@
 
     }
     .face-post{
-        .title-hamsik{
-            padding-top: 50px;
-            padding-bottom: 30px;
-        }
         @extend .text-center;
         h4{
             font-size: 14px;
